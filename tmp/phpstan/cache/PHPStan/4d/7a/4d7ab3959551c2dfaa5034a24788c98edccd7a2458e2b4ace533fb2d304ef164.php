@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Console/WipeCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-b7cd63c3ec39938b8a4975ab1316f265dad52cac8b802e2cf3b13f5179fb51bc-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\console\\wipecommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Notifications/Notification.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-814d2f2adddfccd6d1f077ed967609bbb8e802e112ac5e4ebe07946406dba1ec-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\notifications\\notification' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

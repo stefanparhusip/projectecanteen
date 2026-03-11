@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Routing/Redirector.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-dc7950fc0a2429efb2f47fd5aff765950df41fc01b1c25b379b7977da200d8b3-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\routing\\redirector' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

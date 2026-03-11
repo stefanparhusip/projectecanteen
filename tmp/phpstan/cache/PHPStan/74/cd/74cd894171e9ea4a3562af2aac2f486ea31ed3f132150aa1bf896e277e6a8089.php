@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Foundation/Console/RouteClearCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-080a5cae7b344133ef697b46230e3b31428ac2fad7bee8e07bf60174e0d95e8c-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\foundation\\console\\routeclearcommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

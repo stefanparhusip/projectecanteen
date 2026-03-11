@@ -65,7 +65,19 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Jakarta',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Metrics Endpoint Secret
+    |--------------------------------------------------------------------------
+    |
+    | Bearer token required to access the /metrics Prometheus endpoint.
+    | Set METRICS_SECRET in .env.  Leave empty to disable the endpoint.
+    |
+    */
+
+    'metrics_secret' => env('METRICS_SECRET', ''),
 
     /*
     |--------------------------------------------------------------------------

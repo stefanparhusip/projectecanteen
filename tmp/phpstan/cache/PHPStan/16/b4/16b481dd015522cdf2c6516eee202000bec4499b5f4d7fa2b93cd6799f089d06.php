@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Hashing/Hasher.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-98857ddca4bf010ff97d68870f81b225b6f4e2cc863b02434d62e158185aa3ad-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\contracts\\hashing\\hasher' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

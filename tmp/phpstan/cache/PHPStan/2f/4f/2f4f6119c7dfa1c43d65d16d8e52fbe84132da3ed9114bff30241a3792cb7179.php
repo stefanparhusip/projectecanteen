@@ -1,0 +1,58 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Database/Eloquent/Builder.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Illuminate\Contracts\Database\Eloquent\Builder
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-817073e06f03a18988be9f89d3b0f4c4fcdc53691542c63c82bbd67d52745c5c-8.3.26-6.65.0.9',
+    'data' => [
+        'locatedSource' => [
+            'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+            'data' => [
+                'name' => 'Illuminate\\Contracts\\Database\\Eloquent\\Builder',
+                'filename' => 'C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Database/Eloquent/Builder.php',
+            ],
+        ],
+        'namespace' => 'Illuminate\\Contracts\\Database\\Eloquent',
+        'name' => 'Illuminate\\Contracts\\Database\\Eloquent\\Builder',
+        'shortName' => 'Builder',
+        'isInterface' => true,
+        'isTrait' => false,
+        'isEnum' => false,
+        'isBackedEnum' => false,
+        'modifiers' => 0,
+        'docComment' => '/**
+ * This interface is intentionally empty and exists to improve IDE support.
+ *
+ * @mixin \\Illuminate\\Database\\Eloquent\\Builder
+ */',
+        'attributes' => [
+        ],
+        'startLine' => 12,
+        'endLine' => 14,
+        'startColumn' => 1,
+        'endColumn' => 1,
+        'parentClassName' => null,
+        'implementsClassNames' => [
+            0 => 'Illuminate\\Contracts\\Database\\Query\\Builder',
+        ],
+        'traitClassNames' => [
+        ],
+        'immediateConstants' => [
+        ],
+        'immediateProperties' => [
+        ],
+        'immediateMethods' => [
+        ],
+        'traitsData' => [
+            'aliases' => [
+            ],
+            'modifiers' => [
+            ],
+            'precedences' => [
+            ],
+            'hashes' => [
+            ],
+        ],
+    ],
+]);

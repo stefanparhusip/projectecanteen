@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Foundation/Console/PolicyMakeCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-3021062d3bea129d36bc41ef8d631af35b3753ea9c0de4e63cd66f5068877b62-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\foundation\\console\\policymakecommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

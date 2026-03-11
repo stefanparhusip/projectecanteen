@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Foundation/Console/InterfaceMakeCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-85cff9e2641d442fcb946dd6c903a7bd0434a324702871ea7e3ba3c02691eda0-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\foundation\\console\\interfacemakecommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../nesbot/carbon/src/Carbon/CarbonPeriod.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-2a6235be574184f686c55deba968f1913141b323e6d7f140cbc42ac44a8281c4-8.3.26',
+    'data' => [
+        'classes' => [
+            'carbon\\carbonperiod' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

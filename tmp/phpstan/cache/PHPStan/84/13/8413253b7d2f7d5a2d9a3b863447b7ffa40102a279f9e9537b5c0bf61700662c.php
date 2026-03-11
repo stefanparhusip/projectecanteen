@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/View/Compilers/CompilerInterface.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-30b6545002a62720ec21e8650e373e783b2b3efff1cc8292e3965b2bada386b8-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\view\\compilers\\compilerinterface' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

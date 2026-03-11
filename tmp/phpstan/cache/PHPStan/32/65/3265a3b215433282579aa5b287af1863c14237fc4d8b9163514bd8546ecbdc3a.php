@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Console/MonitorCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-9fef4cd620d74a7d1c9c6bdb384a623bbff9dd6ad4a694897e1f0ca3c54e23ed-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\console\\monitorcommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

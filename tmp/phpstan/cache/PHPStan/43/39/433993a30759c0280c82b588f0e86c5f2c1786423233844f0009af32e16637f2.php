@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-2e25e62283e22a6e5e677285720dfe1a46168152cdc81d2ee7a6f18adf1eabf0-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\filesystem\\filesystemadapter' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

@@ -1,0 +1,483 @@
+openapi: "3.0.3"
+info:
+  title: USK E-Canteen API
+  version: "1.0.0"
+  description: |
+    REST API for the USK E-Canteen mobile integration.
+
+    ## Authentication
+    All protected endpoints require a Bearer token issued via `POST /api/v1/auth/login`.
+    Include it as:
+    ```
+    Authorization: Bearer <token>
+    ```
+
+    ## Token Abilities (Scopes)
+    | Ability | Description |
+    |---------|-------------|
+    | `menus:read` | Read menu catalogue |
+    | `orders:create` | Place new orders |
+    | `orders:read` | Read own order status |
+    | `balance:read` | Read own balance & transactions |
+
+    ## Webhook Signature
+    Webhooks are secured with HMAC-SHA256.
+    Compute: `sha256=HMAC_SHA256(raw_request_body, WEBHOOK_SECRET)` and send in `X-Webhook-Signature`.
+
+servers:
+  - url: /api/v1
+    description: v1 (current)
+
+tags:
+  - name: Auth
+    description: Token issuance and revocation
+  - name: Menus
+    description: Menu catalogue (public read after login)
+  - name: Orders
+    description: Order placement and status polling
+  - name: Balance
+    description: User balance and transaction history
+  - name: Webhooks
+    description: Inbound order-status webhooks (HMAC-signed)
+
+paths:
+  /auth/login:
+    post:
+      tags: [Auth]
+      summary: Issue API token
+      description: Validate email/password and return a Sanctum personal access token.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: student@usk.ac.id
+                password:
+                  type: string
+                  format: password
+                  example: "secret123"
+                abilities:
+                  type: array
+                  items:
+                    type: string
+                    enum: [menus:read, orders:create, orders:read, balance:read]
+                  example: [menus:read, orders:create, orders:read, balance:read]
+      responses:
+        "200":
+          description: Token issued
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: "1|abc123..."
+                  token_type:
+                    type: string
+                    example: bearer
+                  abilities:
+                    type: array
+                    items:
+                      type: string
+        "422":
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationError"
+
+  /auth/logout:
+    post:
+      tags: [Auth]
+      summary: Revoke current token
+      security:
+        - sanctum: []
+      responses:
+        "200":
+          description: Token revoked
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Token berhasil dicabut.
+        "401":
+          $ref: "#/components/responses/Unauthenticated"
+
+  /menus:
+    get:
+      tags: [Menus]
+      summary: List available menus
+      security:
+        - sanctum: []
+      parameters:
+        - name: category_id
+          in: query
+          schema:
+            type: integer
+          description: Filter by category ID
+        - name: search
+          in: query
+          schema:
+            type: string
+            maxLength: 100
+          description: Partial name search
+      responses:
+        "200":
+          description: Menu list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Menu"
+        "401":
+          $ref: "#/components/responses/Unauthenticated"
+
+  /menus/{id}:
+    get:
+      tags: [Menus]
+      summary: Show menu detail
+      security:
+        - sanctum: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Menu detail
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/components/schemas/Menu"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /orders:
+    post:
+      tags: [Orders]
+      summary: Create order
+      description: |
+        Requires `orders:create` token ability.
+        Performs stock and balance validation inside a DB transaction with row-level locks.
+      security:
+        - sanctum: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [break_time_id, items]
+              properties:
+                break_time_id:
+                  type: integer
+                  example: 1
+                items:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: object
+                    required: [menu_id, quantity]
+                    properties:
+                      menu_id:
+                        type: integer
+                        example: 3
+                      quantity:
+                        type: integer
+                        minimum: 1
+                        maximum: 50
+                        example: 2
+                note:
+                  type: string
+                  nullable: true
+                  example: "Tanpa bawang"
+      responses:
+        "201":
+          description: Order created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/components/schemas/Order"
+        "401":
+          $ref: "#/components/responses/Unauthenticated"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "422":
+          $ref: "#/components/responses/UnprocessableEntity"
+
+  /orders/{id}:
+    get:
+      tags: [Orders]
+      summary: Get order status
+      description: Requires `orders:read` token ability. Returns only the requesting user's own orders.
+      security:
+        - sanctum: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Order detail
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/components/schemas/Order"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /balance:
+    get:
+      tags: [Balance]
+      summary: Get user balance
+      description: Requires `balance:read` token ability.
+      security:
+        - sanctum: []
+      responses:
+        "200":
+          description: Balance info
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      balance:
+                        type: number
+                        format: float
+                        example: 125000.0
+                      points_balance:
+                        type: integer
+                        example: 50
+                      transactions:
+                        type: array
+                        items:
+                          $ref: "#/components/schemas/BalanceTransaction"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /webhooks/order-status:
+    post:
+      tags: [Webhooks]
+      summary: Update order status (webhook)
+      description: |
+        Called by external systems (e.g. kitchen display) to push order status changes.
+        The `X-Webhook-Signature` header must contain `sha256=HMAC_SHA256(body, WEBHOOK_SECRET)`.
+      parameters:
+        - name: X-Webhook-Signature
+          in: header
+          required: true
+          schema:
+            type: string
+          description: "sha256=HMAC-SHA256(raw body, WEBHOOK_SECRET)"
+          example: "sha256=abc123..."
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [order_id, status]
+              properties:
+                order_id:
+                  type: integer
+                  example: 42
+                status:
+                  type: string
+                  enum: [pending, preparing, ready, cancelled, collected]
+                  example: ready
+      responses:
+        "200":
+          description: Status updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  order_id:
+                    type: integer
+                  old_status:
+                    type: string
+                  new_status:
+                    type: string
+        "401":
+          description: Invalid signature
+        "422":
+          $ref: "#/components/responses/UnprocessableEntity"
+
+components:
+  securitySchemes:
+    sanctum:
+      type: http
+      scheme: bearer
+      bearerFormat: Sanctum Personal Access Token
+
+  schemas:
+    Menu:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        price:
+          type: number
+          format: float
+        stock:
+          type: integer
+        image_url:
+          type: string
+          nullable: true
+        category:
+          type: string
+          nullable: true
+        is_available:
+          type: boolean
+
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+        status:
+          type: string
+          enum: [pending, preparing, ready, cancelled, collected]
+        status_label:
+          type: string
+        total_price:
+          type: number
+          format: float
+        note:
+          type: string
+          nullable: true
+        ordered_at:
+          type: string
+          format: date-time
+        break_time_id:
+          type: integer
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/OrderItem"
+
+    OrderItem:
+      type: object
+      properties:
+        menu_id:
+          type: integer
+        menu_name:
+          type: string
+        menu_price:
+          type: number
+          format: float
+        quantity:
+          type: integer
+        subtotal:
+          type: number
+          format: float
+
+    BalanceTransaction:
+      type: object
+      properties:
+        id:
+          type: integer
+        type:
+          type: string
+          enum: [topup, debit, refund]
+        amount:
+          type: number
+          format: float
+        balance_before:
+          type: number
+          format: float
+        balance_after:
+          type: number
+          format: float
+        description:
+          type: string
+          nullable: true
+        created_at:
+          type: string
+          format: date-time
+
+    ValidationError:
+      type: object
+      properties:
+        message:
+          type: string
+        errors:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              type: string
+
+  responses:
+    Unauthenticated:
+      description: Missing or invalid token
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: Unauthenticated.
+    Forbidden:
+      description: Token lacks required ability or resource ownership
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: Not Found.
+    UnprocessableEntity:
+      description: Validation or business-rule error
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ValidationError"

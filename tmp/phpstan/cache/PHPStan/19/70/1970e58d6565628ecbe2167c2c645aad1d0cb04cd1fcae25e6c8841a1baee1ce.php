@@ -1,0 +1,137 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Queue/QueueableEntity.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Illuminate\Contracts\Queue\QueueableEntity
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-c081e746d19db452e6ba546cb2a9e1efb838fc81f6deeb9cd4d7d892d64a26fb-8.3.26-6.65.0.9',
+    'data' => [
+        'locatedSource' => [
+            'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+            'data' => [
+                'name' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'filename' => 'C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Queue/QueueableEntity.php',
+            ],
+        ],
+        'namespace' => 'Illuminate\\Contracts\\Queue',
+        'name' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+        'shortName' => 'QueueableEntity',
+        'isInterface' => true,
+        'isTrait' => false,
+        'isEnum' => false,
+        'isBackedEnum' => false,
+        'modifiers' => 0,
+        'docComment' => null,
+        'attributes' => [
+        ],
+        'startLine' => 5,
+        'endLine' => 27,
+        'startColumn' => 1,
+        'endColumn' => 1,
+        'parentClassName' => null,
+        'implementsClassNames' => [
+        ],
+        'traitClassNames' => [
+        ],
+        'immediateConstants' => [
+        ],
+        'immediateProperties' => [
+        ],
+        'immediateMethods' => [
+            'getQueueableId' => [
+                'name' => 'getQueueableId',
+                'parameters' => [
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Get the queueable identity for the entity.
+ *
+ * @return mixed
+ */',
+                'startLine' => 12,
+                'endLine' => 12,
+                'startColumn' => 5,
+                'endColumn' => 37,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 1,
+                'namespace' => 'Illuminate\\Contracts\\Queue',
+                'declaringClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'implementingClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'currentClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'aliasName' => null,
+            ],
+            'getQueueableRelations' => [
+                'name' => 'getQueueableRelations',
+                'parameters' => [
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Get the relationships for the entity.
+ *
+ * @return array
+ */',
+                'startLine' => 19,
+                'endLine' => 19,
+                'startColumn' => 5,
+                'endColumn' => 44,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 1,
+                'namespace' => 'Illuminate\\Contracts\\Queue',
+                'declaringClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'implementingClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'currentClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'aliasName' => null,
+            ],
+            'getQueueableConnection' => [
+                'name' => 'getQueueableConnection',
+                'parameters' => [
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Get the connection of the entity.
+ *
+ * @return string|null
+ */',
+                'startLine' => 26,
+                'endLine' => 26,
+                'startColumn' => 5,
+                'endColumn' => 45,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 1,
+                'namespace' => 'Illuminate\\Contracts\\Queue',
+                'declaringClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'implementingClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'currentClassName' => 'Illuminate\\Contracts\\Queue\\QueueableEntity',
+                'aliasName' => null,
+            ],
+        ],
+        'traitsData' => [
+            'aliases' => [
+            ],
+            'modifiers' => [
+            ],
+            'precedences' => [
+            ],
+            'hashes' => [
+            ],
+        ],
+    ],
+]);

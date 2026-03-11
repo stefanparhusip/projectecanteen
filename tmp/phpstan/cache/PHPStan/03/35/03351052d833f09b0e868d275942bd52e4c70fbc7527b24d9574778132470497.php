@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HidesAttributes.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-257321651af79f730446cdc3c3ab07520d08c2381c1a40209940d66753a660f5-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\eloquent\\concerns\\hidesattributes' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

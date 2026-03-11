@@ -1,0 +1,53 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueue.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Illuminate\Contracts\Queue\ShouldQueue
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-920a7534f1c0306b2c5b0c0194e10ea483fc36829776429fe69f6d66c12a57db-8.3.26-6.65.0.9',
+    'data' => [
+        'locatedSource' => [
+            'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+            'data' => [
+                'name' => 'Illuminate\\Contracts\\Queue\\ShouldQueue',
+                'filename' => 'C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueue.php',
+            ],
+        ],
+        'namespace' => 'Illuminate\\Contracts\\Queue',
+        'name' => 'Illuminate\\Contracts\\Queue\\ShouldQueue',
+        'shortName' => 'ShouldQueue',
+        'isInterface' => true,
+        'isTrait' => false,
+        'isEnum' => false,
+        'isBackedEnum' => false,
+        'modifiers' => 0,
+        'docComment' => null,
+        'attributes' => [
+        ],
+        'startLine' => 5,
+        'endLine' => 8,
+        'startColumn' => 1,
+        'endColumn' => 1,
+        'parentClassName' => null,
+        'implementsClassNames' => [
+        ],
+        'traitClassNames' => [
+        ],
+        'immediateConstants' => [
+        ],
+        'immediateProperties' => [
+        ],
+        'immediateMethods' => [
+        ],
+        'traitsData' => [
+            'aliases' => [
+            ],
+            'modifiers' => [
+            ],
+            'precedences' => [
+            ],
+            'hashes' => [
+            ],
+        ],
+    ],
+]);

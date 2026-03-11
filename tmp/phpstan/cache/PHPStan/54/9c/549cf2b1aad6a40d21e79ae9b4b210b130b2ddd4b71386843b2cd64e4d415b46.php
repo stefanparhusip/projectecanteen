@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Console/Migrations/BaseCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-d36e720a2a494567282aa33bc9db411e0153fcdac201ecd80b206fd9846bed3d-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\console\\migrations\\basecommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

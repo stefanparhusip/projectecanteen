@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Support/Traits/Dumpable.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-5ee524eba6728c03ac2743fb83643d2178f7a632664167f92d87323c10206ad8-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\support\\traits\\dumpable' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

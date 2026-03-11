@@ -1,0 +1,300 @@
+<?php
+
+declare(strict_types=1);
+
+// odsl-C:\laragon\www\usk_no_ai\app\Models\Anomaly.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Anomaly
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-6.65.0.9-8.3.26-54513acca9e29f19d58b738a1e6a68a55da409010f7bb44b1ddfa6f086271f53',
+    'data' => [
+        'locatedSource' => [
+            'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+            'data' => [
+                'name' => 'App\\Models\\Anomaly',
+                'filename' => 'C:/laragon/www/usk_no_ai/app/Models/Anomaly.php',
+            ],
+        ],
+        'namespace' => 'App\\Models',
+        'name' => 'App\\Models\\Anomaly',
+        'shortName' => 'Anomaly',
+        'isInterface' => false,
+        'isTrait' => false,
+        'isEnum' => false,
+        'isBackedEnum' => false,
+        'modifiers' => 0,
+        'docComment' => null,
+        'attributes' => [
+        ],
+        'startLine' => 7,
+        'endLine' => 52,
+        'startColumn' => 1,
+        'endColumn' => 1,
+        'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
+        'implementsClassNames' => [
+        ],
+        'traitClassNames' => [
+        ],
+        'immediateConstants' => [
+            'TYPE_ORDER_SPIKE' => [
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'name' => 'TYPE_ORDER_SPIKE',
+                'modifiers' => 1,
+                'type' => null,
+                'value' => [
+                    'code' => '\'order_spike\'',
+                    'attributes' => [
+                        'startLine' => 37,
+                        'endLine' => 37,
+                        'startTokenPos' => 142,
+                        'startFilePos' => 1009,
+                        'endTokenPos' => 142,
+                        'endFilePos' => 1021,
+                    ],
+                ],
+                'docComment' => null,
+                'attributes' => [
+                ],
+                'startLine' => 37,
+                'endLine' => 37,
+                'startColumn' => 5,
+                'endColumn' => 44,
+            ],
+            'TYPE_REFUND_SPIKE' => [
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'name' => 'TYPE_REFUND_SPIKE',
+                'modifiers' => 1,
+                'type' => null,
+                'value' => [
+                    'code' => '\'refund_spike\'',
+                    'attributes' => [
+                        'startLine' => 38,
+                        'endLine' => 38,
+                        'startTokenPos' => 151,
+                        'startFilePos' => 1055,
+                        'endTokenPos' => 151,
+                        'endFilePos' => 1068,
+                    ],
+                ],
+                'docComment' => null,
+                'attributes' => [
+                ],
+                'startLine' => 38,
+                'endLine' => 38,
+                'startColumn' => 5,
+                'endColumn' => 45,
+            ],
+            'TYPE_TOPUP_SPIKE' => [
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'name' => 'TYPE_TOPUP_SPIKE',
+                'modifiers' => 1,
+                'type' => null,
+                'value' => [
+                    'code' => '\'topup_spike\'',
+                    'attributes' => [
+                        'startLine' => 39,
+                        'endLine' => 39,
+                        'startTokenPos' => 160,
+                        'startFilePos' => 1102,
+                        'endTokenPos' => 160,
+                        'endFilePos' => 1114,
+                    ],
+                ],
+                'docComment' => null,
+                'attributes' => [
+                ],
+                'startLine' => 39,
+                'endLine' => 39,
+                'startColumn' => 5,
+                'endColumn' => 44,
+            ],
+        ],
+        'immediateProperties' => [
+            'fillable' => [
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'name' => 'fillable',
+                'modifiers' => 2,
+                'type' => null,
+                'default' => [
+                    'code' => '[\'type\', \'window\', \'detected_at\', \'observed_value\', \'baseline_mean\', \'baseline_stddev\', \'sigma\', \'resolved\', \'resolved_at\', \'context\']',
+                    'attributes' => [
+                        'startLine' => 9,
+                        'endLine' => 20,
+                        'startTokenPos' => 28,
+                        'startFilePos' => 135,
+                        'endTokenPos' => 60,
+                        'endFilePos' => 366,
+                    ],
+                ],
+                'docComment' => null,
+                'attributes' => [
+                ],
+                'startLine' => 9,
+                'endLine' => 20,
+                'startColumn' => 5,
+                'endColumn' => 6,
+                'isPromoted' => false,
+                'declaredAtCompileTime' => true,
+                'immediateVirtual' => false,
+                'immediateHooks' => [
+                ],
+            ],
+        ],
+        'immediateMethods' => [
+            'casts' => [
+                'name' => 'casts',
+                'parameters' => [
+                ],
+                'returnsReference' => false,
+                'returnType' => [
+                    'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                    'data' => [
+                        'name' => 'array',
+                        'isIdentifier' => true,
+                    ],
+                ],
+                'attributes' => [
+                ],
+                'docComment' => null,
+                'startLine' => 22,
+                'endLine' => 33,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 2,
+                'namespace' => 'App\\Models',
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'currentClassName' => 'App\\Models\\Anomaly',
+                'aliasName' => null,
+            ],
+            'scopeUnresolved' => [
+                'name' => 'scopeUnresolved',
+                'parameters' => [
+                    'query' => [
+                        'name' => 'query',
+                        'default' => null,
+                        'type' => null,
+                        'isVariadic' => false,
+                        'byRef' => false,
+                        'isPromoted' => false,
+                        'attributes' => [
+                        ],
+                        'startLine' => 43,
+                        'endLine' => 43,
+                        'startColumn' => 37,
+                        'endColumn' => 42,
+                        'parameterIndex' => 0,
+                        'isOptional' => false,
+                    ],
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => null,
+                'startLine' => 43,
+                'endLine' => 46,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 1,
+                'namespace' => 'App\\Models',
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'currentClassName' => 'App\\Models\\Anomaly',
+                'aliasName' => null,
+            ],
+            'scopeRecent' => [
+                'name' => 'scopeRecent',
+                'parameters' => [
+                    'query' => [
+                        'name' => 'query',
+                        'default' => null,
+                        'type' => null,
+                        'isVariadic' => false,
+                        'byRef' => false,
+                        'isPromoted' => false,
+                        'attributes' => [
+                        ],
+                        'startLine' => 48,
+                        'endLine' => 48,
+                        'startColumn' => 33,
+                        'endColumn' => 38,
+                        'parameterIndex' => 0,
+                        'isOptional' => false,
+                    ],
+                    'days' => [
+                        'name' => 'days',
+                        'default' => [
+                            'code' => '7',
+                            'attributes' => [
+                                'startLine' => 48,
+                                'endLine' => 48,
+                                'startTokenPos' => 206,
+                                'startFilePos' => 1500,
+                                'endTokenPos' => 206,
+                                'endFilePos' => 1500,
+                            ],
+                        ],
+                        'type' => [
+                            'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                            'data' => [
+                                'name' => 'int',
+                                'isIdentifier' => true,
+                            ],
+                        ],
+                        'isVariadic' => false,
+                        'byRef' => false,
+                        'isPromoted' => false,
+                        'attributes' => [
+                        ],
+                        'startLine' => 48,
+                        'endLine' => 48,
+                        'startColumn' => 41,
+                        'endColumn' => 53,
+                        'parameterIndex' => 1,
+                        'isOptional' => true,
+                    ],
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => null,
+                'startLine' => 48,
+                'endLine' => 51,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 1,
+                'namespace' => 'App\\Models',
+                'declaringClassName' => 'App\\Models\\Anomaly',
+                'implementingClassName' => 'App\\Models\\Anomaly',
+                'currentClassName' => 'App\\Models\\Anomaly',
+                'aliasName' => null,
+            ],
+        ],
+        'traitsData' => [
+            'aliases' => [
+            ],
+            'modifiers' => [
+            ],
+            'precedences' => [
+            ],
+            'hashes' => [
+            ],
+        ],
+    ],
+]);

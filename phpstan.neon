@@ -1,0 +1,27 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+    - phpstan-baseline.neon   # baseline of pre-existing errors — new code must be clean
+
+parameters:
+    paths:
+        - app/
+
+    # Start at level 5 (method/property type checking, return types)
+    level: 5
+
+    # Suppress some Laravel-idiomatic patterns that generate false positives
+    ignoreErrors:
+        # Eloquent magic: $model->attribute access on dynamic properties
+        - '#Access to an undefined property App\\Models\\[A-Za-z]+::\$[a-z_]+\.#'
+        # Cache::store()->connection() is valid at runtime via Store contracts
+        - '#Call to an undefined method Illuminate\\Contracts\\Cache\\Store::connection\(\)\.#'
+        # Dynamic relationship methods resolved by Eloquent: cannot be statically typed yet
+        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Builder.*#'
+        # Ignore "unsafe new static" in test helpers / base classes
+        - '#Unsafe usage of new static\(\)#'
+
+    # Treat undefined variable errors as errors (they are real bugs)
+    reportUnmatchedIgnoredErrors: false
+
+    # Improve performance in CI
+    tmpDir: /tmp/phpstan

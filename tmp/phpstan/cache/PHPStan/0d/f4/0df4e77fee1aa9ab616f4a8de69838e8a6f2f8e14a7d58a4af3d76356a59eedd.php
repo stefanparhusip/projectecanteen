@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-27c9de49a7106a04995c143e4dae31bf0769812a9bf34d3ef15c86805c2193a3-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\console\\seeds\\seedcommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

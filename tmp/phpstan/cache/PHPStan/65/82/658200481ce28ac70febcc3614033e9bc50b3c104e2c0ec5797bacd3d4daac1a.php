@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Queue/Console/RestartCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-781f01f535ac456e614dbf8bfee8027b2893b0e45c8a0c9b9ee78f9b14bff0a6-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\queue\\console\\restartcommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

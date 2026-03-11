@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Filesystem/Filesystem.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-7f296ec3fcb8fcc5205d8615a41ed30e0b4f6f1a6d3914f7f9e0954eb8db2df0-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\contracts\\filesystem\\filesystem' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

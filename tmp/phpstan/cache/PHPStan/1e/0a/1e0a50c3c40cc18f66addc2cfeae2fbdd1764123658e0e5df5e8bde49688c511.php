@@ -1,0 +1,296 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Foundation/Console/ViewCacheCommand.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Illuminate\Foundation\Console\ViewCacheCommand
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-4504af41cfefaeef7ed9a9e7241c4dc8833f65c5cfc6322f68c24d314460ac55-8.3.26-6.65.0.9',
+    'data' => [
+        'locatedSource' => [
+            'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+            'data' => [
+                'name' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'filename' => 'C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Foundation/Console/ViewCacheCommand.php',
+            ],
+        ],
+        'namespace' => 'Illuminate\\Foundation\\Console',
+        'name' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+        'shortName' => 'ViewCacheCommand',
+        'isInterface' => false,
+        'isTrait' => false,
+        'isEnum' => false,
+        'isBackedEnum' => false,
+        'modifiers' => 0,
+        'docComment' => null,
+        'attributes' => [
+            0 => [
+                'name' => 'Symfony\\Component\\Console\\Attribute\\AsCommand',
+                'isRepeated' => false,
+                'arguments' => [
+                    'name' => [
+                        'code' => '\'view:cache\'',
+                        'attributes' => [
+                            'startLine' => 12,
+                            'endLine' => 12,
+                            'startTokenPos' => 43,
+                            'startFilePos' => 319,
+                            'endTokenPos' => 43,
+                            'endFilePos' => 330,
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        'startLine' => 12,
+        'endLine' => 108,
+        'startColumn' => 1,
+        'endColumn' => 1,
+        'parentClassName' => 'Illuminate\\Console\\Command',
+        'implementsClassNames' => [
+        ],
+        'traitClassNames' => [
+        ],
+        'immediateConstants' => [
+        ],
+        'immediateProperties' => [
+            'signature' => [
+                'declaringClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'implementingClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'name' => 'signature',
+                'modifiers' => 2,
+                'type' => null,
+                'default' => [
+                    'code' => '\'view:cache\'',
+                    'attributes' => [
+                        'startLine' => 20,
+                        'endLine' => 20,
+                        'startTokenPos' => 65,
+                        'startFilePos' => 498,
+                        'endTokenPos' => 65,
+                        'endFilePos' => 509,
+                    ],
+                ],
+                'docComment' => '/**
+ * The name and signature of the console command.
+ *
+ * @var string
+ */',
+                'attributes' => [
+                ],
+                'startLine' => 20,
+                'endLine' => 20,
+                'startColumn' => 5,
+                'endColumn' => 40,
+                'isPromoted' => false,
+                'declaredAtCompileTime' => true,
+                'immediateVirtual' => false,
+                'immediateHooks' => [
+                ],
+            ],
+            'description' => [
+                'declaringClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'implementingClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'name' => 'description',
+                'modifiers' => 2,
+                'type' => null,
+                'default' => [
+                    'code' => '"Compile all of the application\'s Blade templates"',
+                    'attributes' => [
+                        'startLine' => 27,
+                        'endLine' => 27,
+                        'startTokenPos' => 76,
+                        'startFilePos' => 624,
+                        'endTokenPos' => 76,
+                        'endFilePos' => 673,
+                    ],
+                ],
+                'docComment' => '/**
+ * The console command description.
+ *
+ * @var string
+ */',
+                'attributes' => [
+                ],
+                'startLine' => 27,
+                'endLine' => 27,
+                'startColumn' => 5,
+                'endColumn' => 80,
+                'isPromoted' => false,
+                'declaredAtCompileTime' => true,
+                'immediateVirtual' => false,
+                'immediateHooks' => [
+                ],
+            ],
+        ],
+        'immediateMethods' => [
+            'handle' => [
+                'name' => 'handle',
+                'parameters' => [
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Execute the console command.
+ *
+ * @return void
+ */',
+                'startLine' => 34,
+                'endLine' => 49,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 1,
+                'namespace' => 'Illuminate\\Foundation\\Console',
+                'declaringClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'implementingClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'currentClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'aliasName' => null,
+            ],
+            'compileViews' => [
+                'name' => 'compileViews',
+                'parameters' => [
+                    'views' => [
+                        'name' => 'views',
+                        'default' => null,
+                        'type' => [
+                            'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                            'data' => [
+                                'name' => 'Illuminate\\Support\\Collection',
+                                'isIdentifier' => false,
+                            ],
+                        ],
+                        'isVariadic' => false,
+                        'byRef' => false,
+                        'isPromoted' => false,
+                        'attributes' => [
+                        ],
+                        'startLine' => 57,
+                        'endLine' => 57,
+                        'startColumn' => 37,
+                        'endColumn' => 53,
+                        'parameterIndex' => 0,
+                        'isOptional' => false,
+                    ],
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Compile the given view files.
+ *
+ * @param  \\Illuminate\\Support\\Collection  $views
+ * @return void
+ */',
+                'startLine' => 57,
+                'endLine' => 70,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 2,
+                'namespace' => 'Illuminate\\Foundation\\Console',
+                'declaringClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'implementingClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'currentClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'aliasName' => null,
+            ],
+            'bladeFilesIn' => [
+                'name' => 'bladeFilesIn',
+                'parameters' => [
+                    'paths' => [
+                        'name' => 'paths',
+                        'default' => null,
+                        'type' => [
+                            'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                            'data' => [
+                                'name' => 'array',
+                                'isIdentifier' => true,
+                            ],
+                        ],
+                        'isVariadic' => false,
+                        'byRef' => false,
+                        'isPromoted' => false,
+                        'attributes' => [
+                        ],
+                        'startLine' => 78,
+                        'endLine' => 78,
+                        'startColumn' => 37,
+                        'endColumn' => 48,
+                        'parameterIndex' => 0,
+                        'isOptional' => false,
+                    ],
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Get the Blade files in the given path.
+ *
+ * @param  array  $paths
+ * @return \\Illuminate\\Support\\Collection
+ */',
+                'startLine' => 78,
+                'endLine' => 93,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 2,
+                'namespace' => 'Illuminate\\Foundation\\Console',
+                'declaringClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'implementingClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'currentClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'aliasName' => null,
+            ],
+            'paths' => [
+                'name' => 'paths',
+                'parameters' => [
+                ],
+                'returnsReference' => false,
+                'returnType' => null,
+                'attributes' => [
+                ],
+                'docComment' => '/**
+ * Get all of the possible view paths.
+ *
+ * @return \\Illuminate\\Support\\Collection
+ */',
+                'startLine' => 100,
+                'endLine' => 107,
+                'startColumn' => 5,
+                'endColumn' => 5,
+                'couldThrow' => false,
+                'isClosure' => false,
+                'isGenerator' => false,
+                'isVariadic' => false,
+                'modifiers' => 2,
+                'namespace' => 'Illuminate\\Foundation\\Console',
+                'declaringClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'implementingClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'currentClassName' => 'Illuminate\\Foundation\\Console\\ViewCacheCommand',
+                'aliasName' => null,
+            ],
+        ],
+        'traitsData' => [
+            'aliases' => [
+            ],
+            'modifiers' => [
+            ],
+            'precedences' => [
+            ],
+            'hashes' => [
+            ],
+        ],
+    ],
+]);

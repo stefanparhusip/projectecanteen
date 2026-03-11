@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Notifications/HasDatabaseNotifications.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-a7a163aa1f98a0ae4cd2135905b6852e29a850beb4296aa72c44c37d22832135-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\notifications\\hasdatabasenotifications' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

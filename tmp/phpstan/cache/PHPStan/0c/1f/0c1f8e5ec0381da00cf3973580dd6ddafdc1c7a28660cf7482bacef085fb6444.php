@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesAuthorizations.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-beadfc7233117197fb029771d0480bf52de8b9e5685194bededbee8ae6429cb3-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\view\\compilers\\concerns\\compilesauthorizations' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

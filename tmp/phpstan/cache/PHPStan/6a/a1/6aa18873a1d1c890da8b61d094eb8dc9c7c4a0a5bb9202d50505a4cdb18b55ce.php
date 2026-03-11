@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateMakeCommand.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-a36f971ce4ef15950bfcdcf595c21f101cee29cdc0eafcf6212be7ce0ed52fa6-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\console\\migrations\\migratemakecommand' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

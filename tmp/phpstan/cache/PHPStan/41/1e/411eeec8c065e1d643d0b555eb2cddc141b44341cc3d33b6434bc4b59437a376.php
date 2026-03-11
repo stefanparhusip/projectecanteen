@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Conditionable/Traits/Conditionable.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-5697fdba0acb78ca0b4e122e5c459cd5d97d000ed9b14fed31271cb7ffd44225-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\support\\traits\\conditionable' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

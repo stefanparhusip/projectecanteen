@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasGlobalScopes.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-f10aae6c87cdd84a16f1daa92c99f74abc5bdd25f6b3f2c3cc099f742b7acf77-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\eloquent\\concerns\\hasglobalscopes' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);

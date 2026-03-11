@@ -1,0 +1,17 @@
+<?php
+
+declare(strict_types=1);
+
+// osfsl-C:/laragon/www/usk_no_ai/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php-presentSymbols
+return \PHPStan\Cache\CacheItem::__set_state([
+    'variableKey' => 'v2-a3a7c7dc5d8bcfd4861a9b2621c9c1087af16a7341a73b70208a704727d38134-8.3.26',
+    'data' => [
+        'classes' => [
+            'illuminate\\database\\eloquent\\relations\\relation' => true,
+        ],
+        'functions' => [
+        ],
+        'constants' => [
+        ],
+    ],
+]);
